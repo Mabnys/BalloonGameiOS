@@ -17,6 +17,9 @@
 		72ABDF6C2C08AD96008D69FF /* Balloon01.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF6B2C08AD96008D69FF /* Balloon01.json */; };
 		72ABDF6E2C08ADB1008D69FF /* Balloon2.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF6D2C08ADB1008D69FF /* Balloon2.json */; };
 		72ABDF702C08AF14008D69FF /* Color+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABDF6F2C08AF14008D69FF /* Color+CustomColors.swift */; };
+		72ABDF722C08B2D1008D69FF /* BalloonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABDF712C08B2D1008D69FF /* BalloonView.swift */; };
+		72ABDF742C08B40C008D69FF /* BalloonLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABDF732C08B40C008D69FF /* BalloonLottieView.swift */; };
+		72ABDF772C08C582008D69FF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 72ABDF762C08C582008D69FF /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		72ABDF6B2C08AD96008D69FF /* Balloon01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Balloon01.json; sourceTree = "<group>"; };
 		72ABDF6D2C08ADB1008D69FF /* Balloon2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Balloon2.json; sourceTree = "<group>"; };
 		72ABDF6F2C08AF14008D69FF /* Color+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+CustomColors.swift"; sourceTree = "<group>"; };
+		72ABDF712C08B2D1008D69FF /* BalloonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonView.swift; sourceTree = "<group>"; };
+		72ABDF732C08B40C008D69FF /* BalloonLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonLottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72ABDF772C08C582008D69FF /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 				72ABDF502C08AA6A008D69FF /* BalloonPrizeGameTests */,
 				72ABDF5A2C08AA6A008D69FF /* BalloonPrizeGameUITests */,
 				72ABDF3D2C08AA68008D69FF /* Products */,
+				72ABDF752C08C582008D69FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +114,8 @@
 				72ABDF452C08AA6A008D69FF /* BalloonPrizeGame.entitlements */,
 				72ABDF462C08AA6A008D69FF /* Preview Content */,
 				72ABDF6F2C08AF14008D69FF /* Color+CustomColors.swift */,
+				72ABDF712C08B2D1008D69FF /* BalloonView.swift */,
+				72ABDF732C08B40C008D69FF /* BalloonLottieView.swift */,
 			);
 			path = BalloonPrizeGame;
 			sourceTree = "<group>";
@@ -138,6 +147,13 @@
 			path = BalloonPrizeGameUITests;
 			sourceTree = "<group>";
 		};
+		72ABDF752C08C582008D69FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +170,9 @@
 			dependencies = (
 			);
 			name = BalloonPrizeGame;
+			packageProductDependencies = (
+				72ABDF762C08C582008D69FF /* Lottie */,
+			);
 			productName = BalloonPrizeGame;
 			productReference = 72ABDF3C2C08AA68008D69FF /* BalloonPrizeGame.app */;
 			productType = "com.apple.product-type.application";
@@ -273,8 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72ABDF742C08B40C008D69FF /* BalloonLottieView.swift in Sources */,
 				72ABDF422C08AA68008D69FF /* ContentView.swift in Sources */,
 				72ABDF402C08AA68008D69FF /* BalloonPrizeGameApp.swift in Sources */,
+				72ABDF722C08B2D1008D69FF /* BalloonView.swift in Sources */,
 				72ABDF702C08AF14008D69FF /* Color+CustomColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -643,6 +664,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		72ABDF762C08C582008D69FF /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72ABDF6A2C08AB1A008D69FF /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 72ABDF342C08AA68008D69FF /* Project object */;
 }

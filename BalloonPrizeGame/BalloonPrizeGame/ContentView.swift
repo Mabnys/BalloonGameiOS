@@ -17,12 +17,11 @@ struct ContentView: View {
                 Image("ITS_Logo")
                     .resizable()
                     .scaledToFit()
-                NavigationLink(destination: EmptyView()) {
+                NavigationLink(destination: BalloonView()) {
                     HStack {
                         Text("Start the balloon game")
                         Image(systemName: "arrowshape.forward.circle")
                     }
-                    
                     .frame(width: 280, height: 50, alignment: .center)
                     .foregroundStyle(Color.white)
                     .background(
