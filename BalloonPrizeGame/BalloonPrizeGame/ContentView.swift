@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
+    @State private var audioPlayer: AVAudioPlayer?
     var body: some View {
         NavigationStack {
             VStack (spacing: 50) {
@@ -32,6 +34,31 @@ struct ContentView: View {
             }
             .padding()
         }
+        .onAppear {
+            startMusic()
+        }
+        .onDisappear {
+            stopMusic()
+        }
+    }
+    
+    func startMusic() {
+        DispatchQueue.global().async {
+            if let soundURL = Bundle.main.url(forResource: "introSon", withExtension: "mp3") {
+                do {
+                    audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+                    audioPlayer?.prepareToPlay()
+                    audioPlayer?.numberOfLoops = -1
+                    audioPlayer?.play()
+                } catch {
+                    print("Error loading audio file:", error.localizedDescription)
+                }
+            }
+        }
+    }
+    
+    func stopMusic() {
+        audioPlayer?.stop()
     }
 }
 

@@ -20,6 +20,7 @@
 		72ABDF722C08B2D1008D69FF /* BalloonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABDF712C08B2D1008D69FF /* BalloonView.swift */; };
 		72ABDF742C08B40C008D69FF /* BalloonLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABDF732C08B40C008D69FF /* BalloonLottieView.swift */; };
 		72ABDF772C08C582008D69FF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 72ABDF762C08C582008D69FF /* Lottie */; };
+		72ABDF792C08C844008D69FF /* introSon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF782C08C844008D69FF /* introSon.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		72ABDF6F2C08AF14008D69FF /* Color+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+CustomColors.swift"; sourceTree = "<group>"; };
 		72ABDF712C08B2D1008D69FF /* BalloonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonView.swift; sourceTree = "<group>"; };
 		72ABDF732C08B40C008D69FF /* BalloonLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonLottieView.swift; sourceTree = "<group>"; };
+		72ABDF782C08C844008D69FF /* introSon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = introSon.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				72ABDF6B2C08AD96008D69FF /* Balloon01.json */,
 				72ABDF6D2C08ADB1008D69FF /* Balloon2.json */,
+				72ABDF782C08C844008D69FF /* introSon.mp3 */,
 				72ABDF472C08AA6A008D69FF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -267,6 +270,7 @@
 				72ABDF482C08AA6A008D69FF /* Preview Assets.xcassets in Resources */,
 				72ABDF442C08AA6A008D69FF /* Assets.xcassets in Resources */,
 				72ABDF6E2C08ADB1008D69FF /* Balloon2.json in Resources */,
+				72ABDF792C08C844008D69FF /* introSon.mp3 in Resources */,
 				72ABDF6C2C08AD96008D69FF /* Balloon01.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
