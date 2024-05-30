@@ -9,28 +9,51 @@ import SwiftUI
 import Lottie
 
 struct BalloonView: View {
-    @State private var message = ""
+    // State variable to track if teh winning animation should be shown
+    @State private var showWinningAnimation = false
+    
+    // State variable to track the prize won
+    @State private var prizeWon: PrizeType = .none
+    
     var body: some View {
-        VStack {
-            BalloonLottieView(lottieFile: "Balloon01")
-        }
-        .onTapGesture {
-            let randomIndex = Int.random(in: 0...3)
-            switch randomIndex {
-            case 0:
-                message = "You win a huge prize!!!"
-            case 1:
-                message = "You loose. Try again!!!"
-            case 2:
-                message = "You win a small prize"
-            case 3:
-                message = "You win a medium prize"
+        ZStack {
+            Color.gray.edgesIgnoringSafeArea(.all) // Set the background color
+            VStack {
+                BalloonLottieView(lottieFile: "Balloon01") // Display the balloons Lottie animation from BallonnLottieView
+                //                    .frame(height: 300) // Set the height of the animation
+                    .onTapGesture {
+                        // Handle balloon tap
+                        prizeWon = determinePrize() // Determine the prize won
+                        showWinningAnimation = true //Show teh winning animation
+                    }
+            }
             
-            default:
-                break
+            // Show the winning animation if the state variable is true
+            if showWinningAnimation {
+                WinningAnimation(prizeWon: $prizeWon)
             }
         }
-    Text(message)
-            .font(.title)
     }
+    
+    // Function to determine the prize won
+    func determinePrize() -> PrizeType {
+        let randomValue = Int.random(in: 0...3) // Randomly choose a prize
+        switch randomValue {
+        case 0:
+            return .none
+        case 1:
+            return .small
+        case 2:
+            return .medium
+        case 3:
+            return .huge
+        default:
+            return .none
+        }
+    }
+}
+
+// Enum to represent the different prize types
+enum PrizeType {
+    case none, small, medium, huge
 }

@@ -21,6 +21,11 @@
 		72ABDF742C08B40C008D69FF /* BalloonLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABDF732C08B40C008D69FF /* BalloonLottieView.swift */; };
 		72ABDF772C08C582008D69FF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 72ABDF762C08C582008D69FF /* Lottie */; };
 		72ABDF792C08C844008D69FF /* introSon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF782C08C844008D69FF /* introSon.mp3 */; };
+		72ABDF7B2C08D3AE008D69FF /* WinningAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABDF7A2C08D3AE008D69FF /* WinningAnimation.swift */; };
+		72ABDF802C08DF7B008D69FF /* small_prize.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF7C2C08DF7B008D69FF /* small_prize.json */; };
+		72ABDF852C08E008008D69FF /* medium_prize.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF842C08E008008D69FF /* medium_prize.json */; };
+		72ABDF872C08E01D008D69FF /* lose.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF862C08E01D008D69FF /* lose.json */; };
+		72ABDF892C08E032008D69FF /* huge_prize.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF882C08E032008D69FF /* huge_prize.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,11 @@
 		72ABDF712C08B2D1008D69FF /* BalloonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonView.swift; sourceTree = "<group>"; };
 		72ABDF732C08B40C008D69FF /* BalloonLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonLottieView.swift; sourceTree = "<group>"; };
 		72ABDF782C08C844008D69FF /* introSon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = introSon.mp3; sourceTree = "<group>"; };
+		72ABDF7A2C08D3AE008D69FF /* WinningAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningAnimation.swift; sourceTree = "<group>"; };
+		72ABDF7C2C08DF7B008D69FF /* small_prize.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = small_prize.json; sourceTree = "<group>"; };
+		72ABDF842C08E008008D69FF /* medium_prize.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = medium_prize.json; sourceTree = "<group>"; };
+		72ABDF862C08E01D008D69FF /* lose.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lose.json; sourceTree = "<group>"; };
+		72ABDF882C08E032008D69FF /* huge_prize.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = huge_prize.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +128,7 @@
 				72ABDF6F2C08AF14008D69FF /* Color+CustomColors.swift */,
 				72ABDF712C08B2D1008D69FF /* BalloonView.swift */,
 				72ABDF732C08B40C008D69FF /* BalloonLottieView.swift */,
+				72ABDF7A2C08D3AE008D69FF /* WinningAnimation.swift */,
 			);
 			path = BalloonPrizeGame;
 			sourceTree = "<group>";
@@ -128,6 +139,10 @@
 				72ABDF6B2C08AD96008D69FF /* Balloon01.json */,
 				72ABDF6D2C08ADB1008D69FF /* Balloon2.json */,
 				72ABDF782C08C844008D69FF /* introSon.mp3 */,
+				72ABDF7C2C08DF7B008D69FF /* small_prize.json */,
+				72ABDF842C08E008008D69FF /* medium_prize.json */,
+				72ABDF862C08E01D008D69FF /* lose.json */,
+				72ABDF882C08E032008D69FF /* huge_prize.json */,
 				72ABDF472C08AA6A008D69FF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -271,7 +286,11 @@
 				72ABDF442C08AA6A008D69FF /* Assets.xcassets in Resources */,
 				72ABDF6E2C08ADB1008D69FF /* Balloon2.json in Resources */,
 				72ABDF792C08C844008D69FF /* introSon.mp3 in Resources */,
+				72ABDF872C08E01D008D69FF /* lose.json in Resources */,
+				72ABDF892C08E032008D69FF /* huge_prize.json in Resources */,
+				72ABDF802C08DF7B008D69FF /* small_prize.json in Resources */,
 				72ABDF6C2C08AD96008D69FF /* Balloon01.json in Resources */,
+				72ABDF852C08E008008D69FF /* medium_prize.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +320,7 @@
 				72ABDF402C08AA68008D69FF /* BalloonPrizeGameApp.swift in Sources */,
 				72ABDF722C08B2D1008D69FF /* BalloonView.swift in Sources */,
 				72ABDF702C08AF14008D69FF /* Color+CustomColors.swift in Sources */,
+				72ABDF7B2C08D3AE008D69FF /* WinningAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
