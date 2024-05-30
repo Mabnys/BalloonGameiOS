@@ -17,7 +17,13 @@ struct BalloonView: View {
     
     var body: some View {
         ZStack {
-            Color.gray.edgesIgnoringSafeArea(.all) // Set the background color
+            LinearGradient(
+                            gradient: Gradient(colors: [.blue, .cyan]),
+                            startPoint: .bottom,
+                            endPoint: .top
+                        )
+                        .edgesIgnoringSafeArea(.all) // Set the linear gradient as the background
+            
             VStack {
                 BalloonLottieView(lottieFile: "Balloon01") // Display the balloons Lottie animation from BallonnLottieView
                 //                    .frame(height: 300) // Set the height of the animation

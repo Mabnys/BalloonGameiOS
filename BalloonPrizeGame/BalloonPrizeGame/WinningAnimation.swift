@@ -16,7 +16,6 @@ struct WinningAnimation: View {
     var body: some View {
         ZStack {
             Color.black.opacity(0.5).edgesIgnoringSafeArea(.all) // Semi-transparent black background
-            
             VStack {
                 BalloonLottieView(lottieFile: getAnimationFileName()) // Display the Lottie animation based on the prize won
                     .frame(height: 200)
