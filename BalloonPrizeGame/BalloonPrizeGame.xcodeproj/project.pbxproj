@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72ABDF402C08AA68008D69FF /* BalloonPrizeGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABDF3F2C08AA68008D69FF /* BalloonPrizeGameApp.swift */; };
+		72ABDF422C08AA68008D69FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABDF412C08AA68008D69FF /* ContentView.swift */; };
+		72ABDF442C08AA6A008D69FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF432C08AA6A008D69FF /* Assets.xcassets */; };
+		72ABDF482C08AA6A008D69FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF472C08AA6A008D69FF /* Preview Assets.xcassets */; };
+		72ABDF522C08AA6A008D69FF /* BalloonPrizeGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABDF512C08AA6A008D69FF /* BalloonPrizeGameTests.swift */; };
+		72ABDF5C2C08AA6A008D69FF /* BalloonPrizeGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABDF5B2C08AA6A008D69FF /* BalloonPrizeGameUITests.swift */; };
+		72ABDF5E2C08AA6A008D69FF /* BalloonPrizeGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABDF5D2C08AA6A008D69FF /* BalloonPrizeGameUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72ABDF4E2C08AA6A008D69FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72ABDF342C08AA68008D69FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72ABDF3B2C08AA68008D69FF;
+			remoteInfo = BalloonPrizeGame;
+		};
+		72ABDF582C08AA6A008D69FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72ABDF342C08AA68008D69FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72ABDF3B2C08AA68008D69FF;
+			remoteInfo = BalloonPrizeGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		72ABDF3C2C08AA68008D69FF /* BalloonPrizeGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalloonPrizeGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72ABDF3F2C08AA68008D69FF /* BalloonPrizeGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonPrizeGameApp.swift; sourceTree = "<group>"; };
+		72ABDF412C08AA68008D69FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		72ABDF432C08AA6A008D69FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72ABDF452C08AA6A008D69FF /* BalloonPrizeGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BalloonPrizeGame.entitlements; sourceTree = "<group>"; };
+		72ABDF472C08AA6A008D69FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		72ABDF4D2C08AA6A008D69FF /* BalloonPrizeGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalloonPrizeGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72ABDF512C08AA6A008D69FF /* BalloonPrizeGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonPrizeGameTests.swift; sourceTree = "<group>"; };
+		72ABDF572C08AA6A008D69FF /* BalloonPrizeGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalloonPrizeGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72ABDF5B2C08AA6A008D69FF /* BalloonPrizeGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonPrizeGameUITests.swift; sourceTree = "<group>"; };
+		72ABDF5D2C08AA6A008D69FF /* BalloonPrizeGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonPrizeGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72ABDF392C08AA68008D69FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72ABDF4A2C08AA6A008D69FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72ABDF542C08AA6A008D69FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72ABDF332C08AA68008D69FF = {
+			isa = PBXGroup;
+			children = (
+				72ABDF3E2C08AA68008D69FF /* BalloonPrizeGame */,
+				72ABDF502C08AA6A008D69FF /* BalloonPrizeGameTests */,
+				72ABDF5A2C08AA6A008D69FF /* BalloonPrizeGameUITests */,
+				72ABDF3D2C08AA68008D69FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72ABDF3D2C08AA68008D69FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72ABDF3C2C08AA68008D69FF /* BalloonPrizeGame.app */,
+				72ABDF4D2C08AA6A008D69FF /* BalloonPrizeGameTests.xctest */,
+				72ABDF572C08AA6A008D69FF /* BalloonPrizeGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72ABDF3E2C08AA68008D69FF /* BalloonPrizeGame */ = {
+			isa = PBXGroup;
+			children = (
+				72ABDF3F2C08AA68008D69FF /* BalloonPrizeGameApp.swift */,
+				72ABDF412C08AA68008D69FF /* ContentView.swift */,
+				72ABDF432C08AA6A008D69FF /* Assets.xcassets */,
+				72ABDF452C08AA6A008D69FF /* BalloonPrizeGame.entitlements */,
+				72ABDF462C08AA6A008D69FF /* Preview Content */,
+			);
+			path = BalloonPrizeGame;
+			sourceTree = "<group>";
+		};
+		72ABDF462C08AA6A008D69FF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				72ABDF472C08AA6A008D69FF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		72ABDF502C08AA6A008D69FF /* BalloonPrizeGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				72ABDF512C08AA6A008D69FF /* BalloonPrizeGameTests.swift */,
+			);
+			path = BalloonPrizeGameTests;
+			sourceTree = "<group>";
+		};
+		72ABDF5A2C08AA6A008D69FF /* BalloonPrizeGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				72ABDF5B2C08AA6A008D69FF /* BalloonPrizeGameUITests.swift */,
+				72ABDF5D2C08AA6A008D69FF /* BalloonPrizeGameUITestsLaunchTests.swift */,
+			);
+			path = BalloonPrizeGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72ABDF3B2C08AA68008D69FF /* BalloonPrizeGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72ABDF612C08AA6A008D69FF /* Build configuration list for PBXNativeTarget "BalloonPrizeGame" */;
+			buildPhases = (
+				72ABDF382C08AA68008D69FF /* Sources */,
+				72ABDF392C08AA68008D69FF /* Frameworks */,
+				72ABDF3A2C08AA68008D69FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BalloonPrizeGame;
+			productName = BalloonPrizeGame;
+			productReference = 72ABDF3C2C08AA68008D69FF /* BalloonPrizeGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72ABDF4C2C08AA6A008D69FF /* BalloonPrizeGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72ABDF642C08AA6A008D69FF /* Build configuration list for PBXNativeTarget "BalloonPrizeGameTests" */;
+			buildPhases = (
+				72ABDF492C08AA6A008D69FF /* Sources */,
+				72ABDF4A2C08AA6A008D69FF /* Frameworks */,
+				72ABDF4B2C08AA6A008D69FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72ABDF4F2C08AA6A008D69FF /* PBXTargetDependency */,
+			);
+			name = BalloonPrizeGameTests;
+			productName = BalloonPrizeGameTests;
+			productReference = 72ABDF4D2C08AA6A008D69FF /* BalloonPrizeGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		72ABDF562C08AA6A008D69FF /* BalloonPrizeGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72ABDF672C08AA6A008D69FF /* Build configuration list for PBXNativeTarget "BalloonPrizeGameUITests" */;
+			buildPhases = (
+				72ABDF532C08AA6A008D69FF /* Sources */,
+				72ABDF542C08AA6A008D69FF /* Frameworks */,
+				72ABDF552C08AA6A008D69FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72ABDF592C08AA6A008D69FF /* PBXTargetDependency */,
+			);
+			name = BalloonPrizeGameUITests;
+			productName = BalloonPrizeGameUITests;
+			productReference = 72ABDF572C08AA6A008D69FF /* BalloonPrizeGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72ABDF342C08AA68008D69FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					72ABDF3B2C08AA68008D69FF = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					72ABDF4C2C08AA6A008D69FF = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 72ABDF3B2C08AA68008D69FF;
+					};
+					72ABDF562C08AA6A008D69FF = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 72ABDF3B2C08AA68008D69FF;
+					};
+				};
+			};
+			buildConfigurationList = 72ABDF372C08AA68008D69FF /* Build configuration list for PBXProject "BalloonPrizeGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72ABDF332C08AA68008D69FF;
+			productRefGroup = 72ABDF3D2C08AA68008D69FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72ABDF3B2C08AA68008D69FF /* BalloonPrizeGame */,
+				72ABDF4C2C08AA6A008D69FF /* BalloonPrizeGameTests */,
+				72ABDF562C08AA6A008D69FF /* BalloonPrizeGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72ABDF3A2C08AA68008D69FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72ABDF482C08AA6A008D69FF /* Preview Assets.xcassets in Resources */,
+				72ABDF442C08AA6A008D69FF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72ABDF4B2C08AA6A008D69FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72ABDF552C08AA6A008D69FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72ABDF382C08AA68008D69FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72ABDF422C08AA68008D69FF /* ContentView.swift in Sources */,
+				72ABDF402C08AA68008D69FF /* BalloonPrizeGameApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72ABDF492C08AA6A008D69FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72ABDF522C08AA6A008D69FF /* BalloonPrizeGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72ABDF532C08AA6A008D69FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72ABDF5C2C08AA6A008D69FF /* BalloonPrizeGameUITests.swift in Sources */,
+				72ABDF5E2C08AA6A008D69FF /* BalloonPrizeGameUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72ABDF4F2C08AA6A008D69FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72ABDF3B2C08AA68008D69FF /* BalloonPrizeGame */;
+			targetProxy = 72ABDF4E2C08AA6A008D69FF /* PBXContainerItemProxy */;
+		};
+		72ABDF592C08AA6A008D69FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72ABDF3B2C08AA68008D69FF /* BalloonPrizeGame */;
+			targetProxy = 72ABDF582C08AA6A008D69FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		72ABDF5F2C08AA6A008D69FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72ABDF602C08AA6A008D69FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		72ABDF622C08AA6A008D69FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BalloonPrizeGame/BalloonPrizeGame.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BalloonPrizeGame/Preview Content\"";
+				DEVELOPMENT_TEAM = SW7JVV2XM6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gov.ny.its.BalloonPrizeGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72ABDF632C08AA6A008D69FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BalloonPrizeGame/BalloonPrizeGame.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BalloonPrizeGame/Preview Content\"";
+				DEVELOPMENT_TEAM = SW7JVV2XM6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gov.ny.its.BalloonPrizeGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		72ABDF652C08AA6A008D69FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SW7JVV2XM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gov.ny.its.BalloonPrizeGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalloonPrizeGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BalloonPrizeGame";
+			};
+			name = Debug;
+		};
+		72ABDF662C08AA6A008D69FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SW7JVV2XM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gov.ny.its.BalloonPrizeGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalloonPrizeGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BalloonPrizeGame";
+			};
+			name = Release;
+		};
+		72ABDF682C08AA6A008D69FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SW7JVV2XM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gov.ny.its.BalloonPrizeGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BalloonPrizeGame;
+			};
+			name = Debug;
+		};
+		72ABDF692C08AA6A008D69FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SW7JVV2XM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gov.ny.its.BalloonPrizeGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BalloonPrizeGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72ABDF372C08AA68008D69FF /* Build configuration list for PBXProject "BalloonPrizeGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72ABDF5F2C08AA6A008D69FF /* Debug */,
+				72ABDF602C08AA6A008D69FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72ABDF612C08AA6A008D69FF /* Build configuration list for PBXNativeTarget "BalloonPrizeGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72ABDF622C08AA6A008D69FF /* Debug */,
+				72ABDF632C08AA6A008D69FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72ABDF642C08AA6A008D69FF /* Build configuration list for PBXNativeTarget "BalloonPrizeGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72ABDF652C08AA6A008D69FF /* Debug */,
+				72ABDF662C08AA6A008D69FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72ABDF672C08AA6A008D69FF /* Build configuration list for PBXNativeTarget "BalloonPrizeGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72ABDF682C08AA6A008D69FF /* Debug */,
+				72ABDF692C08AA6A008D69FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72ABDF342C08AA68008D69FF /* Project object */;
+}
