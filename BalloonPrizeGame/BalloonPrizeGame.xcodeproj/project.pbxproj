@@ -16,6 +16,7 @@
 		72ABDF5E2C08AA6A008D69FF /* BalloonPrizeGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABDF5D2C08AA6A008D69FF /* BalloonPrizeGameUITestsLaunchTests.swift */; };
 		72ABDF6C2C08AD96008D69FF /* Balloon01.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF6B2C08AD96008D69FF /* Balloon01.json */; };
 		72ABDF6E2C08ADB1008D69FF /* Balloon2.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF6D2C08ADB1008D69FF /* Balloon2.json */; };
+		72ABDF702C08AF14008D69FF /* Color+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABDF6F2C08AF14008D69FF /* Color+CustomColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		72ABDF5D2C08AA6A008D69FF /* BalloonPrizeGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonPrizeGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		72ABDF6B2C08AD96008D69FF /* Balloon01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Balloon01.json; sourceTree = "<group>"; };
 		72ABDF6D2C08ADB1008D69FF /* Balloon2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Balloon2.json; sourceTree = "<group>"; };
+		72ABDF6F2C08AF14008D69FF /* Color+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+CustomColors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				72ABDF432C08AA6A008D69FF /* Assets.xcassets */,
 				72ABDF452C08AA6A008D69FF /* BalloonPrizeGame.entitlements */,
 				72ABDF462C08AA6A008D69FF /* Preview Content */,
+				72ABDF6F2C08AF14008D69FF /* Color+CustomColors.swift */,
 			);
 			path = BalloonPrizeGame;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				72ABDF422C08AA68008D69FF /* ContentView.swift in Sources */,
 				72ABDF402C08AA68008D69FF /* BalloonPrizeGameApp.swift in Sources */,
+				72ABDF702C08AF14008D69FF /* Color+CustomColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

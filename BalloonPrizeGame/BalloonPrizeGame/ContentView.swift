@@ -9,13 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack (spacing: 50) {
+                Image("NYS_Fair")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                Image("ITS_Logo")
+                    .resizable()
+                    .scaledToFit()
+                NavigationLink(destination: EmptyView()) {
+                    HStack {
+                        Text("Start the balloon game")
+                        Image(systemName: "arrowshape.forward.circle")
+                    }
+                    
+                    .frame(width: 280, height: 50, alignment: .center)
+                    .foregroundStyle(Color.white)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color.fairgroundColor())
+                    )
+                }
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
