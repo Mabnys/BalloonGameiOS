@@ -18,7 +18,7 @@ struct BalloonView: View {
     var body: some View {
         ZStack {
             LinearGradient(
-                            gradient: Gradient(colors: [.blue, .cyan]),
+                            gradient: Gradient(colors: [.cyan, .black]),
                             startPoint: .bottom,
                             endPoint: .top
                         )
