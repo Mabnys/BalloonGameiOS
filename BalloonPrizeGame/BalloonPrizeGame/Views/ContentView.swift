@@ -34,12 +34,12 @@ struct ContentView: View {
             }
             .padding()
         }
-        .onAppear {
-            startMusic()
-        }
-        .onDisappear {
-            stopMusic()
-        }
+//        .onAppear {
+//            startMusic()
+//        }
+//        .onDisappear {
+//            stopMusic()
+//        }
     }
     
     func startMusic() {

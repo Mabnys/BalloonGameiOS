@@ -26,6 +26,8 @@
 		72ABDF852C08E008008D69FF /* medium_prize.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF842C08E008008D69FF /* medium_prize.json */; };
 		72ABDF872C08E01D008D69FF /* lose.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF862C08E01D008D69FF /* lose.json */; };
 		72ABDF892C08E032008D69FF /* huge_prize.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF882C08E032008D69FF /* huge_prize.json */; };
+		72CABB1D2C20A39000A0A323 /* AgeGroupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CABB1C2C20A39000A0A323 /* AgeGroupButton.swift */; };
+		72CABB1F2C20A3F300A0A323 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CABB1E2C20A3F300A0A323 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		72ABDF842C08E008008D69FF /* medium_prize.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = medium_prize.json; sourceTree = "<group>"; };
 		72ABDF862C08E01D008D69FF /* lose.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lose.json; sourceTree = "<group>"; };
 		72ABDF882C08E032008D69FF /* huge_prize.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = huge_prize.json; sourceTree = "<group>"; };
+		72CABB1C2C20A39000A0A323 /* AgeGroupButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeGroupButton.swift; sourceTree = "<group>"; };
+		72CABB1E2C20A3F300A0A323 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,15 +124,10 @@
 		72ABDF3E2C08AA68008D69FF /* BalloonPrizeGame */ = {
 			isa = PBXGroup;
 			children = (
-				72ABDF3F2C08AA68008D69FF /* BalloonPrizeGameApp.swift */,
-				72ABDF412C08AA68008D69FF /* ContentView.swift */,
-				72ABDF432C08AA6A008D69FF /* Assets.xcassets */,
+				72CABB1A2C20A2D500A0A323 /* App */,
+				72CABB1B2C20A32A00A0A323 /* Views */,
 				72ABDF452C08AA6A008D69FF /* BalloonPrizeGame.entitlements */,
 				72ABDF462C08AA6A008D69FF /* Preview Content */,
-				72ABDF6F2C08AF14008D69FF /* Color+CustomColors.swift */,
-				72ABDF712C08B2D1008D69FF /* BalloonView.swift */,
-				72ABDF732C08B40C008D69FF /* BalloonLottieView.swift */,
-				72ABDF7A2C08D3AE008D69FF /* WinningAnimation.swift */,
 			);
 			path = BalloonPrizeGame;
 			sourceTree = "<group>";
@@ -170,6 +169,29 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72CABB1A2C20A2D500A0A323 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				72ABDF432C08AA6A008D69FF /* Assets.xcassets */,
+				72ABDF3F2C08AA68008D69FF /* BalloonPrizeGameApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		72CABB1B2C20A32A00A0A323 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72ABDF7A2C08D3AE008D69FF /* WinningAnimation.swift */,
+				72ABDF732C08B40C008D69FF /* BalloonLottieView.swift */,
+				72ABDF712C08B2D1008D69FF /* BalloonView.swift */,
+				72ABDF6F2C08AF14008D69FF /* Color+CustomColors.swift */,
+				72ABDF412C08AA68008D69FF /* ContentView.swift */,
+				72CABB1C2C20A39000A0A323 /* AgeGroupButton.swift */,
+				72CABB1E2C20A3F300A0A323 /* Constants.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,7 +342,9 @@
 				72ABDF402C08AA68008D69FF /* BalloonPrizeGameApp.swift in Sources */,
 				72ABDF722C08B2D1008D69FF /* BalloonView.swift in Sources */,
 				72ABDF702C08AF14008D69FF /* Color+CustomColors.swift in Sources */,
+				72CABB1D2C20A39000A0A323 /* AgeGroupButton.swift in Sources */,
 				72ABDF7B2C08D3AE008D69FF /* WinningAnimation.swift in Sources */,
+				72CABB1F2C20A3F300A0A323 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
