@@ -8,22 +8,23 @@
 import Foundation
 import SwiftUI
 
-// Custom view for age group buttons
+// Custom view for the picker button
 struct AgeGroupButton: View {
-    let ageGroup: AgeGroup
-    @Binding var selectedAgeGroup: AgeGroup?
+    @Binding var selectedAgeGroup: AgeGroup
     
     var body: some View {
-        Button(action: {
-            selectedAgeGroup = ageGroup
-        }) {
-            Text(ageGroup.description)
-                .font(.title3)
-                .fontWeight(.semibold)
-                .foregroundColor(selectedAgeGroup == ageGroup ? .white : .blue)
+        Menu {
+            Picker("Choose Your Age Group", selection: $selectedAgeGroup) {
+                Text("Kid").tag(AgeGroup.kid)
+                Text("Teenager").tag(AgeGroup.teenager)
+                Text("Adult").tag(AgeGroup.adult)
+            }
+        } label: {
+            Text("Choose Your Age Group")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(Color.fairgroundColor())
                 .padding()
-                .background(selectedAgeGroup == ageGroup ? Color.blue : Color.clear)
-                .cornerRadius(10)
         }
     }
 }

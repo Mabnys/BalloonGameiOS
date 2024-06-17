@@ -9,10 +9,10 @@ import Foundation
 
 // Enum for age groups
 enum AgeGroup: String, CaseIterable {
-    case kid = "Kid (1-11)"
-    case teenager = "Teenager (12-18)"
-    case adult = "Adult (18+)"
-    
+    case kid = "Kid"
+    case teenager = "Teenager"
+    case adult = "Adult"
+   case none = ""
     var description: String {
         rawValue
     }
