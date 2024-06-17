@@ -15,7 +15,7 @@ struct BalloonView: View {
   @State private var prizeWon: PrizeType = .none
   
   @State private var continueGame = false
-  @State private var animationName: String = "Balloon01"
+  @State private var animationName: String = "Balloon2"
   
   @Binding var showBallon: Bool
   
@@ -44,7 +44,7 @@ struct BalloonView: View {
         WinningAnimation(prizeWon: $prizeWon)
           .onTapGesture {
             showWinningAnimation = false
-            animationName = "Balloon01"
+            animationName = "Balloon2"
           }
       }
     }

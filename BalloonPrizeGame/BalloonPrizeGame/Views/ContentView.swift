@@ -15,18 +15,9 @@ struct ContentView: View {
   @State private var selectedAgeGroup: AgeGroup = .none
   
   @State private var showBallon = false
-  // Binding for the selected age group to control the navigation link
-  //  private var selectedAgeGroupBinding: Binding<Bool> {
-  //    Binding<Bool>(
-  //      get: { selectedAgeGroup != .none },
-  //      set: { _ in }
-  //    )
-  //  }
-  
   @State private var selectAgeGroupBinding = false
   
   var body: some View {
-    //    NavigationStack {
     ZStack {
       VStack (spacing: 50) {
         Image("NYS_Fair")
@@ -44,7 +35,6 @@ struct ContentView: View {
               selectedAgeGroup = .none
             }
           }
-        
         
         if selectedAgeGroup != .none {
           Button {
@@ -94,13 +84,6 @@ struct ContentView: View {
   
   func stopMusic() {
     audioPlayer?.stop()
-  }
-}
-
-// Empty view for the second screen
-struct SecondView: View {
-  var body: some View {
-    Text("Second Screen")
   }
 }
 
