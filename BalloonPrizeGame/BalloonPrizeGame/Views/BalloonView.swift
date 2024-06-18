@@ -15,7 +15,7 @@ struct BalloonView: View {
   @State private var prizeWon: PrizeType = .none
   
   @State private var continueGame = false
-  @State private var animationName: String = "Balloon2"
+  @State var animationName: String = "Balloon01"
   
   @Binding var showBallon: Bool
   
@@ -44,15 +44,28 @@ struct BalloonView: View {
         WinningAnimation(prizeWon: $prizeWon)
           .onTapGesture {
             showWinningAnimation = false
-            animationName = "Balloon2"
+            animationName = "Balloon01"
           }
       }
     }
   }
   
+  func pickNumber() -> Int {
+    let numbers = [
+      0, 0, 0, 0, 0, 0,   // 0 appears 60% of the time
+      1, 1, 1, 1,         // 1 appears 25% of the time
+      2, 2,               // 2 appears 10% of the time
+      3                   // 3 appears 5% of the time
+    ]
+    
+    let randomIndex = Int(arc4random_uniform(UInt32(numbers.count)))
+    return numbers[randomIndex]
+  }
+  
   // Function to determine the prize won
   func determinePrize() -> PrizeType {
-    let randomValue = Int.random(in: 0...3) // Randomly choose a prize
+//    let randomValue = Int.random(in: 0...3) // Randomly choose a prize
+    let randomValue = pickNumber() //Randomly choose a prize
     switch randomValue {
     case 0:
       DispatchQueue.main.asyncAfter(deadline: .now() + 2) {

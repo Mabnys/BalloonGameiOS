@@ -28,6 +28,7 @@
 		72ABDF892C08E032008D69FF /* huge_prize.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ABDF882C08E032008D69FF /* huge_prize.json */; };
 		72CABB1D2C20A39000A0A323 /* AgeGroupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CABB1C2C20A39000A0A323 /* AgeGroupButton.swift */; };
 		72CABB1F2C20A3F300A0A323 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CABB1E2C20A3F300A0A323 /* Constants.swift */; };
+		72CABB212C21B63500A0A323 /* NormalBalloonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CABB202C21B63500A0A323 /* NormalBalloonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		72ABDF882C08E032008D69FF /* huge_prize.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = huge_prize.json; sourceTree = "<group>"; };
 		72CABB1C2C20A39000A0A323 /* AgeGroupButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeGroupButton.swift; sourceTree = "<group>"; };
 		72CABB1E2C20A3F300A0A323 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		72CABB202C21B63500A0A323 /* NormalBalloonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalBalloonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				72ABDF412C08AA68008D69FF /* ContentView.swift */,
 				72CABB1C2C20A39000A0A323 /* AgeGroupButton.swift */,
 				72CABB1E2C20A3F300A0A323 /* Constants.swift */,
+				72CABB202C21B63500A0A323 /* NormalBalloonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				72CABB1D2C20A39000A0A323 /* AgeGroupButton.swift in Sources */,
 				72ABDF7B2C08D3AE008D69FF /* WinningAnimation.swift in Sources */,
 				72CABB1F2C20A3F300A0A323 /* Constants.swift in Sources */,
+				72CABB212C21B63500A0A323 /* NormalBalloonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

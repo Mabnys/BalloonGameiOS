@@ -14,7 +14,7 @@ struct ContentView: View {
   // State variable to store the selected age group
   @State private var selectedAgeGroup: AgeGroup = .none
   
-  @State private var showBallon = false
+  @State var showBallon = false
   @State private var selectAgeGroupBinding = false
   
   var body: some View {
@@ -56,15 +56,16 @@ struct ContentView: View {
       }
       .padding()
       if showBallon {
+//        NormalBalloonView(showBallon: $showBallon)
         BalloonView(showBallon: $showBallon)
       }
     }
-    .onAppear {
-        startMusic()
-    }
-    .onDisappear {
-        stopMusic()
-    }
+//    .onAppear {
+//        startMusic()
+//    }
+//    .onDisappear {
+//        stopMusic()
+//    }
   }
         
   func startMusic() {
@@ -86,7 +87,7 @@ struct ContentView: View {
     audioPlayer?.stop()
   }
 }
-
-#Preview {
-  ContentView()
-}
+//
+//#Preview {
+//  ContentView()
+//}
