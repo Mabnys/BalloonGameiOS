@@ -56,8 +56,8 @@ struct ContentView: View {
       }
       .padding()
       if showBallon {
-//        NormalBalloonView(showBallon: $showBallon)
-        BalloonView(showBallon: $showBallon)
+        NormalBalloonView(showBallon: $showBallon)
+//        BalloonView(showBallon: $showBallon)
       }
     }
 //    .onAppear {

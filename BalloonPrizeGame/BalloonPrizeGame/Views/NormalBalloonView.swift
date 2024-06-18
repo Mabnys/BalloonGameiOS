@@ -21,7 +21,7 @@ struct NormalBalloonView: View {
   @State private var moveToTop = false
   
   // array of balloons
-  @State private var balloons: [BalloonLottieView] = [BalloonLottieView(lottieFile: "Balloon2"), BalloonLottieView(lottieFile: "Balloon2"), BalloonLottieView(lottieFile: "Balloon2")]
+  @State private var balloons: [BalloonLottieView] = [BalloonLottieView(lottieFile: "Balloon2"), BalloonLottieView(lottieFile: "BlueBalloon"), BalloonLottieView(lottieFile: "GreenBalloon"), BalloonLottieView(lottieFile: "pink balloon"), BalloonLottieView(lottieFile: "GrayBalloon"), BalloonLottieView(lottieFile: "YellowBalloon")]
   
   @Binding var showBallon: Bool
   
@@ -39,7 +39,7 @@ struct NormalBalloonView: View {
           Spacer()
           
           balloons[0]
-            .frame(width: 100, height: 100)
+            .frame(width: 150, height: 150)
             .position(x: geometry.size.width / 4, y: moveToTop ? 100 : geometry.size.height - 100)  // adjust the 'y' position
             .animation(Animation.linear(duration: 5), value: moveToTop) // Slow aninmation
             .onTapGesture {
@@ -48,15 +48,39 @@ struct NormalBalloonView: View {
             }
           balloons[1]
             .frame(width: 150, height: 150)
-            .position(x: geometry.size.width / 2, y: moveToTop ? 100 : geometry.size.height - 100)  // adjust the 'y' position
+            .position(x: geometry.size.width / 2, y: moveToTop ? 100 : geometry.size.height - 80)  // adjust the 'y' position
             .animation(Animation.linear(duration: 3), value: moveToTop) // Slow aninmation
             .onTapGesture {
               prizeWon = determinePrize() // Determine the prize won
               showWinningAnimation = true
             }
-          balloons[0]
+          balloons[2]
             .frame(width: 150, height: 150)
-            .position(x: geometry.size.width / 5, y: moveToTop ? 100 : geometry.size.height - 100)  // adjust the 'y' position
+            .position(x: geometry.size.width / 1.5, y: moveToTop ? 90 : geometry.size.height - 90)  // adjust the 'y' position
+            .animation(Animation.linear(duration: 4), value: moveToTop) // Slow aninmation
+            .onTapGesture {
+              prizeWon = determinePrize() // Determine the prize won
+              showWinningAnimation = true
+            }
+          balloons[3]
+            .frame(width: 150, height: 150)
+            .position(x: geometry.size.width / 4, y: moveToTop ? 70 : geometry.size.height - 70)  // adjust the 'y' position
+            .animation(Animation.linear(duration: 4), value: moveToTop) // Slow aninmation
+            .onTapGesture {
+              prizeWon = determinePrize() // Determine the prize won
+              showWinningAnimation = true
+            }
+          balloons[4]
+            .frame(width: 150, height: 150)
+            .position(x: geometry.size.width / 2, y: moveToTop ? 60 : geometry.size.height - 60)  // adjust the 'y' position
+            .animation(Animation.linear(duration: 4), value: moveToTop) // Slow aninmation
+            .onTapGesture {
+              prizeWon = determinePrize() // Determine the prize won
+              showWinningAnimation = true
+            }
+          balloons[5]
+            .frame(width: 150, height: 150)
+            .position(x: geometry.size.width / 1.5, y: moveToTop ? 50 : geometry.size.height - 50)  // adjust the 'y' position
             .animation(Animation.linear(duration: 4), value: moveToTop) // Slow aninmation
             .onTapGesture {
               prizeWon = determinePrize() // Determine the prize won
