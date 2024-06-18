@@ -15,8 +15,7 @@ struct NormalBalloonView: View {
   // State variable to track the prize won
   @State private var prizeWon: PrizeType = .none
   
-  @State private var continueGame = false
-  // @State  var animationName: [BalloonView]
+  
   
   @State private var moveToTop = false
   
@@ -100,7 +99,7 @@ struct NormalBalloonView: View {
         WinningAnimation(prizeWon: $prizeWon)
         
           .onTapGesture {
-            showWinningAnimation = false
+            showBallon.toggle()
           }
       }
     }
@@ -124,20 +123,12 @@ struct NormalBalloonView: View {
     let randomValue = pickNumber()
     switch randomValue {
     case 0:
-      DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-        showBallon.toggle()
-      }
       return .none
     case 1:
-      continueGame.toggle()
       return .small
     case 2:
-      continueGame.toggle()
       return .medium
     case 3:
-      DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-        showBallon.toggle()
-      }
       return .huge
     default:
       return .none

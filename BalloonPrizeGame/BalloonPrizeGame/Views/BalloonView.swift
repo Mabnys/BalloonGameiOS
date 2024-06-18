@@ -43,7 +43,7 @@ struct BalloonView: View {
       if showWinningAnimation {
         WinningAnimation(prizeWon: $prizeWon)
           .onTapGesture {
-            showWinningAnimation = false
+            showBallon.toggle()
             animationName = "Balloon01"
           }
       }
@@ -64,24 +64,15 @@ struct BalloonView: View {
   
   // Function to determine the prize won
   func determinePrize() -> PrizeType {
-//    let randomValue = Int.random(in: 0...3) // Randomly choose a prize
     let randomValue = pickNumber() //Randomly choose a prize
     switch randomValue {
     case 0:
-      DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-        showBallon.toggle()
-      }
       return .none
     case 1:
-      continueGame.toggle()
       return .small
     case 2:
-      continueGame.toggle()
       return .medium
     case 3:
-      DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-        showBallon.toggle()
-      }
       return .huge
     default:
       return .none
