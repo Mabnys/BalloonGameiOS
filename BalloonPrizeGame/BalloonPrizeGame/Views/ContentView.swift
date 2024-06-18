@@ -11,11 +11,11 @@ import AVFoundation
 struct ContentView: View {
   @Environment(\.dismiss) var dismiss
   @State private var audioPlayer: AVAudioPlayer?
-  // State variable to store the selected age group
-  @State private var selectedAgeGroup: AgeGroup = .none
-  
+  @State private var selectedGameType: GameType = .none
   @State var showBallon = false
-  @State private var selectAgeGroupBinding = false
+  @State var normalBalloon = false
+  @State private var easyGameTypeBinding = false
+  @State private var normalGameTypeBinding = false
   
   var body: some View {
     ZStack {
@@ -26,48 +26,39 @@ struct ContentView: View {
         Image("ITS_Logo")
           .resizable()
           .scaledToFit()
- 
         
-        // Picker button for selecting age group
-        AgeGroupButton(selectedAgeGroup: $selectedAgeGroup).opacity(selectedAgeGroup == .none ? 1 : 0)
-          .onChange(of: showBallon) { oldValue, newValue in
-            if newValue == false {
-              selectedAgeGroup = .none
-            }
-          }
+        Spacer() // Adds spacing at the top
         
-        if selectedAgeGroup != .none {
-          Button {
-            showBallon = true
-          } label: {
-            HStack {
-                Text("\(selectedAgeGroup.description) is starting the balloon game")
-                Image(systemName: "arrowshape.forward.circle")
-            }
-            .frame(width: 280, height: 50, alignment: .center)
-            .foregroundStyle(Color.white)
-            .background(
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(Color.fairgroundColor())
-            )
-          }
-          
+        // Buttons for selecting game type
+        GameTypeButton(gameType: .easy, selectedGameType: $selectedGameType, showBallon: $showBallon, normalBalloon: $normalBalloon)
+        GameTypeButton(gameType: .normal, selectedGameType: $selectedGameType, showBallon: $showBallon, normalBalloon: $normalBalloon)
+        
+        Spacer() // Adds spacing between the buttons and the navigation links
+        
+        // Navigation link to SecondView for "Easy" game type
+        NavigationLink(destination: BalloonView(showBallon: $showBallon), isActive: $easyGameTypeBinding) {
         }
+        
+        // Navigation link to ThirdView for "Normal" game type
+        NavigationLink(destination: NormalBalloonView(showBallon: $showBallon), isActive: $normalGameTypeBinding) {
+        }
+        
       }
       .padding()
       if showBallon {
-        NormalBalloonView(showBallon: $showBallon)
-//        BalloonView(showBallon: $showBallon)
+        BalloonView(showBallon: $showBallon)
+      } else if normalBalloon {
+        NormalBalloonView(showBallon: $normalBalloon)
       }
     }
-//    .onAppear {
-//        startMusic()
-//    }
-//    .onDisappear {
-//        stopMusic()
-//    }
+    .onAppear {
+      startMusic()
+    }
+    .onDisappear {
+      stopMusic()
+    }
   }
-        
+  
   func startMusic() {
     DispatchQueue.global().async {
       if let soundURL = Bundle.main.url(forResource: "introSon", withExtension: "mp3") {
@@ -87,7 +78,7 @@ struct ContentView: View {
     audioPlayer?.stop()
   }
 }
-//
-//#Preview {
-//  ContentView()
-//}
+
+#Preview {
+  ContentView()
+}

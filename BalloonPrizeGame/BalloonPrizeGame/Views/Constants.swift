@@ -7,11 +7,10 @@
 
 import Foundation
 
-// Enum for age groups
-enum AgeGroup: String, CaseIterable {
-    case kid = "Kid"
-    case teenager = "Teenager"
-    case adult = "Adult"
+// Enum for Game Type
+enum GameType: String, CaseIterable {
+    case easy = "Easy"
+    case normal = "Normal"
    case none = ""
     var description: String {
         rawValue
