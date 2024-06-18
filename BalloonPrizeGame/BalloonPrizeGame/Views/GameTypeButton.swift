@@ -15,15 +15,17 @@ struct GameTypeButton: View {
   @Binding var normalBalloon: Bool
   var body: some View {
     Button(action: {
-      selectedGameType = gameType
-      if selectedGameType == .easy {
-        showBallon = true
-        normalBalloon = false
-        BalloonView(showBallon: $showBallon)
-      } else {
-        normalBalloon = true
-        showBallon = false
-        NormalBalloonView(showBallon: $normalBalloon)
+      withAnimation {
+        selectedGameType = gameType
+        if selectedGameType == .easy {
+          showBallon = true
+          normalBalloon = false
+          BalloonView(showBallon: $showBallon)
+        } else {
+          normalBalloon = true
+          showBallon = false
+          NormalBalloonView(showBallon: $normalBalloon)
+        }
       }
     }) {
       

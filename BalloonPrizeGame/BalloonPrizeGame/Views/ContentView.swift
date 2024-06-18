@@ -48,8 +48,10 @@ struct ContentView: View {
       .padding()
       if showBallon {
         BalloonView(showBallon: $showBallon)
+          .animation(.easeIn, value: showBallon)
       } else if normalBalloon {
         NormalBalloonView(showBallon: $normalBalloon)
+          .animation(.easeIn, value: normalBalloon)
       }
     }
     .onAppear {
