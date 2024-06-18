@@ -21,7 +21,8 @@ struct ContentView: View {
     ZStack {
       VStack (spacing: 50) {
         Image("NYS_Fair")
-          .imageScale(.large)
+          .resizable()
+          .scaledToFit()
           .foregroundStyle(.tint)
         Image("ITS_Logo")
           .resizable()
